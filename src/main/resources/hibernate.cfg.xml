@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 
 
-    -<session-factory>
+    <session-factory>
 
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
@@ -10,9 +11,9 @@
 
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/photo_app?zeroDateTimeBehavior=convertToNull</property>
 
-    <property name="hibernate.connection.username">bajas</property>
+    <property name="hibernate.connection.username">bukk</property>
 
-    <property name="hibernate.connection.password">bajas</property>
+    <property name="hibernate.connection.password">bukk</property>
 
     <property name="hibernate.id.new_generator_mappings">true</property>
 

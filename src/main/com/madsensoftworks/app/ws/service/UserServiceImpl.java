@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public UserDTO createUser(UserDTO user) {
-        UserDTO returnValue = new UserDTO();
+        UserDTO returnValue = null;
 
         //Validate required fields
         userProfileUtils.validateRequiredFields(user);
@@ -31,13 +31,19 @@ public class UserServiceImpl implements UserService{
         }
 
         //Generate secure public user id
+        String publicUserId = userProfileUtils.generateUserId(30);
+        user.setPublicUserId(publicUserId);
 
         //Generate salt
+        String salt = userProfileUtils.getSalt(30);
 
         //Generate secure password
+        String encryptedPassword = userProfileUtils.generateSecurePassword(user.getPassword(), salt);
+        user.setSalt(salt);
+        user.setEncryptedPassword(encryptedPassword);
 
         //Record data into database
-
+        returnValue = this.saveUser(user);
         //Return the user profile
 
         return returnValue;
@@ -58,5 +64,18 @@ public class UserServiceImpl implements UserService{
         }
 
         return userDto;
+    }
+
+    private UserDTO saveUser(UserDTO user) {
+        UserDTO returnValue = null;
+        //Connect to database
+        try {
+            this.database.openConnection();
+            returnValue = this.database.saveUser(user);
+        } finally {
+            this.database.closeConnection();
+        }
+
+        return returnValue;
     }
 }

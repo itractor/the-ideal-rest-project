@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.barstadsoftworks.app.ws</groupId>
+  <groupId>com.madsensoftworks.app.ws</groupId>
   <artifactId>mobile-app-ws</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
@@ -42,28 +42,36 @@
       <version>2.25</version>
     </dependency>
 
-    <!-- Hibernate Dependencies -->
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
     <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-core</artifactId>
-      <version>5.2.8.Final</version>
-    </dependency>
+
+    <groupId>org.hibernate</groupId>
+
+    <artifactId>hibernate-core</artifactId>
+
+    <version>5.2.8.Final</version>
+
+  </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
     <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-validator</artifactId>
-      <version>5.4.0.Final</version>
-    </dependency>
 
-    <!-- MySQL Dependencies -->
+    <groupId>org.hibernate</groupId>
+
+    <artifactId>hibernate-validator</artifactId>
+
+    <version>5.4.0.Final</version>
+
+  </dependency>
+
+
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.41</version>
+      <version>8.0.13</version>
     </dependency>
+
 
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
     <dependency>
@@ -71,17 +79,18 @@
       <artifactId>spring-beans</artifactId>
       <version>4.3.7.RELEASE</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+
     <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-entitymanager</artifactId>
-      <version>4.3.1.Final</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-c3p0</artifactId>
-      <version>5.2.12.Final</version>
-    </dependency>
+
+    <groupId>org.hibernate</groupId>
+
+    <artifactId>hibernate-entitymanager</artifactId>
+
+    <version>4.3.1.Final</version>
+
+  </dependency>
+
 
     <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-ses -->
     <dependency>
