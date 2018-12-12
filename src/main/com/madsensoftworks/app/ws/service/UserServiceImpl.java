@@ -1,5 +1,6 @@
 package com.madsensoftworks.app.ws.service;
 
+import com.madsensoftworks.app.ws.exceptions.NoRecordFoundException;
 import com.madsensoftworks.app.ws.exceptions.UnableToCreateRecordException;
 import com.madsensoftworks.app.ws.io.dao.DAO;
 import com.madsensoftworks.app.ws.io.dao.implementation.MySQLDAO;
@@ -46,6 +47,21 @@ public class UserServiceImpl implements com.madsensoftworks.app.ws.service.UserS
         returnValue = this.saveUser(user);
         //Return the user profile
 
+        return returnValue;
+    }
+
+    @Override
+    public UserDTO getUser(String id) {
+        UserDTO returnValue = null;
+        try {
+            this.database.openConnection();
+            returnValue = this.database.getUser(id);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            throw new NoRecordFoundException(ErrorMessages.NO_RECORD_FOUND.getErrorMessage());
+        } finally {
+            this.database.closeConnection();
+        }
         return returnValue;
     }
 

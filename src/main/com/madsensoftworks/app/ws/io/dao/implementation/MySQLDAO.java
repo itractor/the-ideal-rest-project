@@ -59,7 +59,7 @@ public class MySQLDAO implements DAO {
         //Query roots always reference entitie
         Root<UserEntity> profileRoot = criteria.from(UserEntity.class);
         criteria.select(profileRoot);
-        criteria.where(cb.equal(profileRoot.get("userId"), id));
+        criteria.where(cb.equal(profileRoot.get("publicUserId"), id));
 
         // Fetch single result
         UserEntity userEntity = session.createQuery(criteria).getSingleResult();
