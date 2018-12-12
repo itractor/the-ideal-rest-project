@@ -1,6 +1,6 @@
-package main.com.madsensoftworks.app.ws.io.dao;
+package com.madsensoftworks.app.ws.io.dao;
 
-import main.com.madsensoftworks.app.ws.shared.dto.UserDTO;
+import com.madsensoftworks.app.ws.shared.dto.UserDTO;
 
 public interface DAO {
     void openConnection();

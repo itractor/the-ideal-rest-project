@@ -1,7 +1,7 @@
-package main.com.madsensoftworks.app.ws.exceptions;
+package com.madsensoftworks.app.ws.exceptions;
 
-import main.com.madsensoftworks.app.ws.ui.model.response.ErrorMessage;
-import main.com.madsensoftworks.app.ws.ui.model.response.ErrorMessages;
+import com.madsensoftworks.app.ws.ui.model.response.ErrorMessage;
+import com.madsensoftworks.app.ws.ui.model.response.ErrorMessages;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;

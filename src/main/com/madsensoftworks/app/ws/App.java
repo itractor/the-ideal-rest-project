@@ -1,4 +1,4 @@
-package src.main.com.madsensoftworks.app.ws;
+package com.madsensoftworks.app.ws;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

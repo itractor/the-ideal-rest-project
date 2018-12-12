@@ -1,10 +1,10 @@
-package main.com.madsensoftworks.app.ws.ui.entrypoints;
+package com.madsensoftworks.app.ws.ui.entrypoints;
 
-import main.com.madsensoftworks.app.ws.service.UserService;
-import main.com.madsensoftworks.app.ws.service.UserServiceImpl;
-import main.com.madsensoftworks.app.ws.shared.dto.UserDTO;
-import main.com.madsensoftworks.app.ws.ui.model.request.CreateUserRequestModel;
-import main.com.madsensoftworks.app.ws.ui.model.response.UserProfileRest;
+import com.madsensoftworks.app.ws.service.UserServiceImpl;
+import com.madsensoftworks.app.ws.service.UserService;
+import com.madsensoftworks.app.ws.shared.dto.UserDTO;
+import com.madsensoftworks.app.ws.ui.model.request.CreateUserRequestModel;
+import com.madsensoftworks.app.ws.ui.model.response.UserProfileRest;
 import org.springframework.beans.BeanUtils;
 
 import javax.ws.rs.Consumes;

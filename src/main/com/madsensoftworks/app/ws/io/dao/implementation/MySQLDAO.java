@@ -1,9 +1,9 @@
-package main.com.madsensoftworks.app.ws.io.dao.implementation;
+package com.madsensoftworks.app.ws.io.dao.implementation;
 
-import main.com.madsensoftworks.app.ws.io.dao.DAO;
-import main.com.madsensoftworks.app.ws.io.entity.UserEntity;
-import main.com.madsensoftworks.app.ws.shared.dto.UserDTO;
-import main.com.madsensoftworks.app.ws.utils.HibernateUtils;
+import com.madsensoftworks.app.ws.io.dao.DAO;
+import com.madsensoftworks.app.ws.io.entity.UserEntity;
+import com.madsensoftworks.app.ws.shared.dto.UserDTO;
+import com.madsensoftworks.app.ws.utils.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;

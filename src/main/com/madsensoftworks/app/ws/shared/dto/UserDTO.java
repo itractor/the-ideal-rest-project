@@ -1,4 +1,4 @@
-package main.com.madsensoftworks.app.ws.shared.dto;
+package com.madsensoftworks.app.ws.shared.dto;
 
 import java.io.Serializable;
 

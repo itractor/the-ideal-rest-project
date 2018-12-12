@@ -1,4 +1,4 @@
-package main.com.madsensoftworks.app.ws.utils;
+package com.madsensoftworks.app.ws.utils;
 
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;

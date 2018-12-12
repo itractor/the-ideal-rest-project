@@ -1,4 +1,4 @@
-package main.com.madsensoftworks.app.ws.ui.model.response;
+package com.madsensoftworks.app.ws.ui.model.response;
 
 public enum ErrorMessages {
 

@@ -1,13 +1,13 @@
-package main.com.madsensoftworks.app.ws.service;
+package com.madsensoftworks.app.ws.service;
 
-import main.com.madsensoftworks.app.ws.exceptions.UnableToCreateRecordException;
-import main.com.madsensoftworks.app.ws.io.dao.DAO;
-import main.com.madsensoftworks.app.ws.io.dao.implementation.MySQLDAO;
-import main.com.madsensoftworks.app.ws.shared.dto.UserDTO;
-import main.com.madsensoftworks.app.ws.ui.model.response.ErrorMessages;
-import main.com.madsensoftworks.app.ws.utils.UserProfileUtils;
+import com.madsensoftworks.app.ws.exceptions.UnableToCreateRecordException;
+import com.madsensoftworks.app.ws.io.dao.DAO;
+import com.madsensoftworks.app.ws.io.dao.implementation.MySQLDAO;
+import com.madsensoftworks.app.ws.shared.dto.UserDTO;
+import com.madsensoftworks.app.ws.ui.model.response.ErrorMessages;
+import com.madsensoftworks.app.ws.utils.UserProfileUtils;
 
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements com.madsensoftworks.app.ws.service.UserService {
 
     DAO database;
 

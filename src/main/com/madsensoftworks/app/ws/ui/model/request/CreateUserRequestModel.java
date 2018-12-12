@@ -1,4 +1,4 @@
-package main.com.madsensoftworks.app.ws.ui.model.request;
+package com.madsensoftworks.app.ws.ui.model.request;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

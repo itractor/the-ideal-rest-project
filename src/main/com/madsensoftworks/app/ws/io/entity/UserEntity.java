@@ -1,4 +1,4 @@
-package main.com.madsensoftworks.app.ws.io.entity;
+package com.madsensoftworks.app.ws.io.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

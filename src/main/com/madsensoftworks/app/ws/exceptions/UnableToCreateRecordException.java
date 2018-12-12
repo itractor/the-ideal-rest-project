@@ -1,4 +1,4 @@
-package main.com.madsensoftworks.app.ws.exceptions;
+package com.madsensoftworks.app.ws.exceptions;
 
 public class UnableToCreateRecordException extends RuntimeException {
 

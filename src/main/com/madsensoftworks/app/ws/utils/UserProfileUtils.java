@@ -1,8 +1,8 @@
-package main.com.madsensoftworks.app.ws.utils;
+package com.madsensoftworks.app.ws.utils;
 
-import main.com.madsensoftworks.app.ws.exceptions.MissingRequiredFieldException;
-import main.com.madsensoftworks.app.ws.shared.dto.UserDTO;
-import main.com.madsensoftworks.app.ws.ui.model.response.ErrorMessages;
+import com.madsensoftworks.app.ws.exceptions.MissingRequiredFieldException;
+import com.madsensoftworks.app.ws.shared.dto.UserDTO;
+import com.madsensoftworks.app.ws.ui.model.response.ErrorMessages;
 
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
