@@ -13,6 +13,7 @@ public class UserDTO implements Serializable {
     private String salt;
     private String encryptedPassword;
     private String publicUserId;
+    private String token;
 
     public long getId() {
         return id;
@@ -76,5 +77,13 @@ public class UserDTO implements Serializable {
 
     public void setPublicUserId(String publicUserId) {
         this.publicUserId = publicUserId;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getToken() {
+        return token;
     }
 }
